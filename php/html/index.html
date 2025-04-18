@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Home, abitazioni, immobili, casa, trasferimento, appartamento, città">
+    <meta name="description" content="Home page del sito Tec Immobiliare.it">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Home | Tec Immobiliare.it</title>
+</head>
+<body>
+    <div class="allpage">
+        <a class="nascosto" href="#present">Salta al contenuto</a> <!--Link per saltare la prima parte-->
+        <div><placeholder_header></placeholder_header></div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <p class="padd_left">Ti trovi in: <span lang="en">Home</span></p>
+        </nav>
+
+        <div class="immagini">
+            <img src="../images/app1.jpg" alt="immobile generico">
+        </div>
+
+        <div id="present" class="padd_bott padd_top">
+            <h2>Sei in cerca della casa dei tuoi sogni?</h2>
+            <p class="paragrafi"><strong>Tec Immobiliare.it</strong> è in grado di offrirti la soluzione che più ti si addice.</p>
+            <p class="paragrafi">Il nostro <span lang="en">team</span>, specializzato nel <strong>settore immobiliare</strong>, è composto da <strong>diversificate figure professionali</strong>, capaci di consigliarti e aiutarti, passo dopo passo, nella scelta della tua futura casa ideale!</p>
+            <p class="paragrafi">Fornendoci le tue preferenze sulla <strong>posizione</strong>, sul <strong>budget</strong> e sulle <strong>caratteristiche essenziali</strong> che la tua casa deve avere, noi riusciamo a mostrarti tutte le offerte disponibili attualmente sul mercato immobiliare.</p>
+            <p class="paragrafi padd_top">Cosa aspetti? Affidati a Tec Immobiliare.it ed inizia a sognare.</p>
+        </div>
+
+        <div id="offerte" class="padd_top padd_bott">
+            <h2>Scopri le offerte della settimana</h2>
+            <!--Lista di case/appartamenti in offerta-->
+            <!--Possibilità carosello--> 
+            <ul id="list_offerte" class="flex padd_bott">
+                <li class="imm_card">
+                    <img src="../images/app1.jpg" alt="Appartamento Florian">
+                    <p class="titolo_imm_card padd_top_less">Appartamento Florian</p>        
+                    <p class="prezzo padd_top_less">Prezzo: 124.0000 €</p>
+                    <p class="description padd_top_less">Centrale | 150m2 | 2bagni</p> <!--Aggiungere descrizione VELOCE dell'immobile-->
+                    <a href="../php/immobile_page.php?immobileID=2&path=offer" aria-label="Scopri descrizione più dettagliata di questo immobile">Scopri</a>
+                </li>
+                <li class="imm_card">
+                    <img src="../images/app1.jpg" alt="Appartamento Florian">
+                    <p class="titolo_imm_card padd_top_less">Appartamento Florian</p>        
+                    <p class="prezzo padd_top_less">Prezzo: 124.0000 €</p>
+                    <p class="description padd_top_less">Centrale | 150m2 | 2bagni</p> <!--Aggiungere descrizione VELOCE dell'immobile-->
+                    <a href="../php/immobile_page.php?immobileID=2&path=offer" aria-label="Scopri descrizione più dettagliata di questo immobile">Scopri</a>
+                </li>
+                <li class="imm_card">
+                    <img src="../images/app1.jpg" alt="Appartamento Florian">
+                    <p class="titolo_imm_card padd_top_less">Appartamento Florian</p>        
+                    <p class="prezzo padd_top_less">Prezzo: 124.0000 €</p>
+                    <p class="description padd_top_less">Centrale | 150m2 | 2bagni</p> <!--Aggiungere descrizione VELOCE dell'immobile-->
+                    <a href="../php/immobile_page.php?immobileID=2&path=offer" aria-label="Scopri descrizione più dettagliata di questo immobile">Scopri</a>
+                </li>
+            </ul> 
+        </div>
+
+        <div id="servizi" class="padd_top padd_bott">
+            <h2>I nostri servizi</h2>
+            <ul class="flex_col">
+                <li>
+                    <h3>Consulenza gratuita</h3>
+                    <p class="paragrafi">Non aver timore di farci qualsiasi domanda! La nostra consulenza immobiliare è totalmente gratuita.</p>
+                </li>
+                <li>
+                    <h3>Valutazione immobili</h3>
+                    <p class="paragrafi">Hai un immobile da vendere? Tec Immobiliare è in grado di stimare il tuo immobile in base agli attuali prezzi di mercato.</p>
+                </li>
+                <li>
+                    <h3>Zero burocrazia</h3>
+                    <p class="paragrafi">Non preoccuparti. Il nostro team tratterà tutti gli aspetti burocratici dell'immobile mantenendo costantemente aggiornato il cliente.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="goup padd_top">
+            <a href="#" aria-label="Torna su">&#9650;</a>
+        </div>
+    </div>
+
+    <placeholder_footer></placeholder_footer>
+    <script src="../js/script.js"></script>
+</body>

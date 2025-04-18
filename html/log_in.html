@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <title>Login | Tec immobiliare.it </title>
+    <meta name="keywords" content="Accedi, login, profilo, immobili, case, appartamenti, email, password"/>
+    <meta name="description" content="Pagina per accedere area personale di Tec immobiliare.it"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <div class="allpage">
+        <a class="nascosto" href="#main">Salta al contenuto</a> <!--Link per saltare la prima parte-->
+        <div><placeholder_header></placeholder_header></div>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <p class="padd_left">Ti trovi in: Accedi</p>
+        </nav>
+    
+        <div class="flex_log" id="main">
+            <div>
+                <h2 lang="en">Login</h2>
+                <div id="message" class="@msg_type message"><placeholder_error></placeholder_error></div>
+                <form class="flex_logform" action="../php/log_in.php" method="post" onsubmit="controllaAccesso(event);" >
+                    <label for="email" lang="en">Email</label>
+                    <input type="text" id="email" name="email" />
+                    <label for="password" lang="en">Password</label>
+                    <input type="password" id="password" name="password" />
+                    <input type="submit" value="Login" name="submit" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <placeholder_footer></placeholder_footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

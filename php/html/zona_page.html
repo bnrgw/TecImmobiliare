@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Zona, immobili, dove, metratura, prezzo, casa, trasferimento, appartamento, città">
+    <meta name="description" content="Pagina di tutti gli immobili in vendita di una zona specifica">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Zone_Immobili | Tec Immobiliare.it</title>
+</head>
+<body>
+    <div class="allpage">
+        <div>
+            <a class="nascosto" href="">Salta al contenuto</a> <!--Link per saltare la prima parte-->
+            <div><placeholder_header></placeholder_header></div>
+        </div>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <p class="padd_left">Ti trovi in: <a href="../php/immobili.php">Immobili</a> &raquo; <placeholder_zone></placeholder_zone></p>
+        </nav>
+
+        <h2><placeholder_zone></placeholder_zone></h2>
+        <p class="paragrafi"><placeholder_zoneDescription></placeholder_zoneDescription></p>
+
+
+        <ul class="lista_imm">
+            <placeholder_immobiliList></placeholder_immobiliList>
+        </ul>
+       
+        <div class="goup padd_top">
+            <a href="#" aria-label="Torna su">&#9650;</a>
+        </div>
+    </div>
+    
+    <placeholder_footer></placeholder_footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

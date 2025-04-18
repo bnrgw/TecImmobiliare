@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <title>Registrati | Tec immobiliare.it </title>
+    <meta name="keywords" content="Registrati, iscriviti, profilo, immobili, case, appartamenti, email, unisciti"/>
+    <meta name="description" content="Pagina per registrarsi a Tec immobiliare.it"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+
+<body>
+    <div class="allpage backimg">
+        <a class="nascosto" href="">Salta al contenuto</a> <!--Link per saltare la prima parte-->
+        <div><placeholder_header></placeholder_header></div>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <p class="padd_left">Ti trovi in: Registrati</p>
+        </nav>
+    
+        <div class="flex_log">	
+            <div>
+                <h2>Registrazione</h2>
+                <div id="message" class="@msg_type message"><placeholder_error></placeholder_error></div>
+                <form  class="flex_logform" action="../php/sign_up.php" method="post" onsubmit="return controllaIscrizione(event);">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"  required>
+
+                    <label for="surname">Cognome:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    
+                    <label for="email" lang="en">Email</label>
+                    <input type="text" id="email" name="email" />
+            
+                    <label for="password" lang="en">Password</label>
+                    <input type="password" id="password" name="password" />
+    
+                    <label for="confirm_pwd" lang="en">Conferma password:</label>
+                    <input type="password" id="confirm_pwd" name="confirm_pwd" required />
+            
+                    <input type="submit" value="Registrami" name="submit" />
+                </form> 
+    
+            </div>
+        </div>
+
+
+    </div>
+    
+
+    <placeholder_footer></placeholder_footer>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>    

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dove, prezzo, stanze, immobili, casa, trasferimento, appartamento, città, metratura">
+    <meta name="description" content="Pagina contenente informazioni dettagliate di uno specifico immobile">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>Info Immobile | Tec Immobiliare.it</title>
+</head>
+<body>
+    <div class="allpage">
+        <div>
+            <a class="nascosto" href="#sing_imm">Salta al contenuto</a> <!--Link per saltare la prima parte-->
+            <div><placeholder_header></placeholder_header></div>
+        </div>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <p class="padd_left">Ti trovi in: <placeholder_breadcrumb></placeholder_breadcrumb></p> <!--Può cambiare se arrivo da immboili salvati o immobili-->
+        </nav>
+
+        <div id="sing_imm" class="padd_top">
+            <h2><placeholder_title></placeholder_title>, <placeholder_street></placeholder_street></h2>
+            <img src="@img_path" alt="@name"> 
+            <p class="prezzo padd_top padd_bott">prezzo: <placeholder_price></placeholder_price>&euro;</p>
+            <div id="caratteristiche_info">
+                <div>
+                    <p class="description_1">Dove</p>
+                    <p class="description"><placeholder_street></placeholder_street>, <placeholder_city></placeholder_city></p>
+                </div>
+                <div>
+                    <p class="description_1"><abbr title="metri quadri">m2q</abbr></p>
+                    <p class="description"><placeholder_surface></placeholder_surface><abbr title="metri quadri">m2q</abbr></p>
+                </div>
+                <div>
+                    <p class="description_1"><abbr title="numero">N.</abbr> locali</p>
+                    <p class="description"><placeholder_nRooms></placeholder_nRooms></p>
+                </div>
+            </div>
+            <p  class="paragrafi descr_dett"><placeholder_description></placeholder_description></p>
+            <div id = "message" class="@msg_type message"><placeholder_error></placeholder_error></div>
+            <form class='flex_logform' action='../php/immobile_page.php?immobileID=@immobileID&path=@path#message' method='post'>
+                <input type='submit' name ='submit' value='@save/remove'>
+            </form>
+        </div>
+
+        <div class="goup padd_top">
+            <a href="#" aria-label="Torna su">&#9650;</a>
+        </div>
+    </div>
+
+    <placeholder_footer></placeholder_footer>
+    <script src="../js/script.js"></script>
+</body>

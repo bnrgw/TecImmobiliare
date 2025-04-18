@@ -1,0 +1,10 @@
+<p class="paragrafi">La tua recensione</p>
+<div id="old_rev" class="padd_top">
+    <p><placeholder_oldReview></placeholder_oldReview></p>
+</div>
+<placeholder_deleteReview></placeholder_deleteReview>
+<form class="flex_logform" action="../php/contatti.php#review" method="post" onsubmit="controllaReview(event);">
+    <label for="review">Modifica la tua recensione</label>
+    <textarea name="review" id="review" cols="20" rows="10" placeholder=""></textarea>
+    <input type="submit" name="submit" value="@button_value"/>
+</form>
